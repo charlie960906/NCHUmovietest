@@ -82,7 +82,6 @@ export default function Home() {
     try {
       await navigator.clipboard.writeText(shareText);
       setCopied(true);
-      setToast("專屬分享文案已複製");
     } catch {
       setToast("複製失敗，請手動截圖分享");
     }
